@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting Cards from Authentic</title>
+</head>
+<body>
+<div class="container" style="width:70%; margin: 0 auto; padding-top:50px;">
+
+{% for product in products %}
+ <p><a href="/shop/{{ product['slug'] }}">{{ product['title'] }}</a></p>
+{% endfor %}
+
+</div>
+</body>
+</html>
